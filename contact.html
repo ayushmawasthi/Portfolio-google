@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayush Mohan Awasthi | Contact</title>
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #e3cfe6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Submit Button CSS */
+
+.submit{
+    width: 6vw;
+    height: 4vh;
+    padding-top: 0.5vh;
+    font-size: 1.5vh;
+    font-weight: 550;
+    background: #71277e;
+    color: white;
+    border: none;
+    border-radius: 0.2vw;
+}
+
+/* General CSS */
+
+.title{
+    font-size: 5vh;
+}
+
+.subtitle{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    font-style: italic;
+}
+
+.container{
+    width: 70vw;
+}
+
+.subcontainer{
+    width: 100%;
+    height: 18vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    background: white;
+    border-radius: 10px;
+    padding-left: 3vw;
+}
+
+/* Heading CSS */
+
+.headingcard{
+    border-top: 1.5vh solid #71277e;
+    height: 19vh;
+}
+
+.heading{
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    font-size: 5vh
+}
+
+.subheading{
+    margin-top: 2vh;
+
+}
+
+.required{
+    margin-top: 3vh;
+    color: red;
+}
+
+/* Name input CSS */
+.namecard{
+    padding-top: 2vh;
+    height: 20vh;
+}
+
+input[type=text]{
+    font-size: 1.5vh;
+    padding-top: 0.5vh;
+    padding-left: 0.vw;
+    border: none;
+    border-bottom: 0.1vh solid #aaa;
+    height: 2.5vh;
+    width: 45%;
+    margin-top: 2vh;
+}
+input[type=text]{
+    outline: none;
+}
+
+::placeholder { 
+    color: #444;
+    opacity: 1;
+    font-size: 2vh; 
+}
+  
+:-ms-input-placeholder { 
+    color: #444;
+}
+  
+::-ms-input-placeholder {
+    color: #444;
+}
+
+
+input[type=radio]{
+    transform: scale(1.5);
+    width: 4vw;
+    margin-top: 2vh;
+}
+
+/* Checkboxes Button CSS */
+
+.checkboxcard{
+    padding-top: 2vh;
+    height: 30vh;
+}
+
+.checkoption{
+    margin-top: 2vh;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subcontainer headingcard">
+            <p class="heading">Contact</p>
+            <p class="subheading"> Write your thoughts down here</p>
+            <p class="required">* Required</p>
+        </div>
+        <form action="send.php" method="post">
+        <div class="subcontainer namecard">
+            <p class="title">Full Name</p>
+            <p class="subtitle">Please enter your name</p>
+            <input type="text" placeholder="Your answer" name="name" required>
+        </div>
+        <div class="subcontainer namecard">
+            <p class="title">Mail</p>
+            <p class="subtitle">Please enter your mail</p>
+            <input type="text" placeholder="Your email here"  name="email" required>
+        </div>
+        <div class="subcontainer namecard">
+            <p class="title">Message</p>
+            <p class="subtitle">Please enter your Message</p>
+            <input type="text" placeholder="Your message here" name="message" required>
+        </div>
+        <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
